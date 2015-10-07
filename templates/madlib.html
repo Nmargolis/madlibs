@@ -26,7 +26,12 @@
         </form> -->
 
         <p>
-            There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way.
+            There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{person}} went to pick it up, it burst into flames in a totally {{ adjective }} way. {{person}} then ate these yummy fruits:
+            <ul>
+            {% for fruit in fruit_list %}
+                <li>{{ fruit }}</li>
+            {% endfor %}
+            </ul>
         </p>
 
     </body>
